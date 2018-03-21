@@ -1,0 +1,14 @@
+[
+  {
+    "name": "marchew",
+    "status": "yes"
+  },
+  {
+    "name": "sałata",
+    "status": "no"
+  },
+  {
+    "name": "sałata",
+    "status": "conditionally"
+  }
+]
