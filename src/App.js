@@ -5,7 +5,7 @@ import * as data from './data'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {TextField} from "material-ui";
 import Fuse from 'fuse.js'
-import {ActionDone, AlertWarning, ContentClear} from "material-ui/svg-icons/index";
+import {ActionDone, ContentClear, NotificationPriorityHigh} from "material-ui/svg-icons/index";
 
 var options = {
     keys: ['name'],
@@ -17,7 +17,7 @@ function getIcon(iconName){
     if(iconName === "yes"){
         return <ActionDone/>
     } else if (iconName === "conditionally") {
-        return <AlertWarning/>
+        return <NotificationPriorityHigh />
     } else if (iconName === "no") {
         return <ContentClear />
     }
@@ -43,7 +43,7 @@ class App extends Component {
                     />
                     <List/>
                     {
-                        list.map((d, n) => <ListItem primaryText={d['name']} rightIcon={getIcon(d['statusw'])} key={n}/>)
+                        list.map((d, n) => <ListItem primaryText={d['name']} rightIcon={getIcon(d['status'])} key={n}/>)
                     }
                 </div>
             </MuiThemeProvider>

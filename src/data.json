@@ -1,14 +1,1 @@
-[
-  {
-    "name": "groszek z kapustą",
-    "status": "conditionally"
-  },
-  {
-    "name": "marchew",
-    "status": "yes"
-  },
-  {
-    "name": "sałata",
-    "status": "no"
-  }
-]
+[{"name": "marchew", "status": "yes"}, {"name": "kapusta", "status": "no"}, {"name": "japka", "status": "no"}, {"name": "groch", "status": "conditionally"}]
